@@ -1,0 +1,16 @@
+python
+pip --version
+==========To use html in tk==========
+pip install requests
+pip install pillow
+pip install tkhtmlview
+==========Flask=======================
+cd Documents
+mkdir flask_app
+cd flask_app
+py -m venv env
+env\Scripts\activate
+pip install flask
+cls
+set FLASK_APP=app.py
+After saving the code:flask run
