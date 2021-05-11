@@ -1,0 +1,15 @@
+cd Desktop
+cd programs
+git init
+git remote add origin https
+To check repository:git remote -v
+To change repository:git remote set-url origin https
+git add file.py
+git commit -m file.py
+git push origin master
+
+To change author of commit:git config --global user.name "newname"
+To change author of commit:git config --global user.email "newemail"
+To check author of commit:git log
+
+If authentication failed arises: git clone https
