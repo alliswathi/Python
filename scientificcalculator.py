@@ -2,7 +2,7 @@ from tkinter import *
 from definitions import *
 from menudef import *
 import parser
- 
+
 #===========================standard calling functions========================================================================
 
 button_1 = Button(calc, text="1", padx=45, pady=20, fg="white", bg="black", command=lambda: button_click(1)).grid(row=4, column=0)
