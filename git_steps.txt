@@ -1,7 +1,7 @@
 cd Desktop
 cd programs
 ============================================================================
-git init
+git init(To start a new repository)
 ===============================================================================
 git remote add origin https
 To check repository:git remote -v
@@ -11,6 +11,7 @@ To add a single file:git add file.py
 To add everything at once: git add -A (git add command doesn't change the repository  and changes are not saved  until we use git commit).
 =====================================committing==================================================================================================================
 Saves any changes only locally:git commit -m file.py
+Committs any files that added with the git add: git commit -a
 ============================================================pushing==============================================================================================
 To send changes to the remote server. It uploads commits to the remote repository: git push origin master ( It only uploads changes that are committed ).
 If branch is newly created , then we need to upload the branch: git push -u origin branchname
@@ -20,12 +21,13 @@ It is used to get updates from the remote repository. It is a combination of git
 To change author of commit:git config --global user.name "newname"
 To change author of commit:git config --global user.email "newemail"
 To check author of commit:git log
+git log --follow file(lists version history for a file)
 =======================================================revert==========================================================================================================
 git log --oneline(To see our commit history)
 shift+q to exit
 To undo our commits: git revert hashcode
 ==========================================clone=========================================================================================================================
-If authentication failed arises: git clone https (It is for downloading existing source code from a remote repository.Basically, it makes an identical copy of the latest version of a project in a repository and saves to computer).
+If authentication failed arises: git clone https (It is for downloading existing source code from a remote repository.Basically, it makes an identical copy of the latest version of a project in a repository and saves to computer).(Used to obtain repository from an existing url)
 =======================Branch==================================================
 =========================create================================================
 To create branch:git branch branchname (will create a branch locally).
@@ -38,8 +40,8 @@ To delete a branch: git branch -d branchname
 ===========================checkout==============================================
 To switch from one branch to another : git checkout branchname
 To create and switch to a branch at the same time: git checkout -b branchname
-==================================================================================
-To get information about current branch: git status
+===============================status===================================================
+To get information about current branch: git status(lists all the files that have to be committed)
 ==================================================================================
 cls to clear
 q to quit
@@ -51,3 +53,5 @@ If we get this error then use the following command:
 git stash
 git stash -u will delete untracked files
 git stash pop will restore deleted untracked files
+======================================================================remove==========================================================================================
+git rm file(deletes the file from working directory and stages the deletion)
