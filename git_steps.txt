@@ -44,6 +44,10 @@ To get information about current branch: git status
 cls to clear
 q to quit
 ==========================stash===================================================
+error: Your local changes to the following files would be overwritten by merge:
+        file
+Please commit your changes or stash them before you merge.
+If we get this error then use the following command:
 git stash
 git stash -u will delete untracked files
 git stash pop will restore deleted untracked files
